@@ -1,0 +1,16 @@
+.login-prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .section-header {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  .section-cards {
+    padding: 80px 0;
+    background-color: #f0f0f0;
+  }

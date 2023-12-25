@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+
+<div class="container mt-4">
+    <h1 class="text-center">Welcome to Our Home Page! You are logged in successfully.</h1>
+  </div>
+  <!-- Cards Section -->
+  <div class="section-cards">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+{% else %}
+<div class="login-prompt">
+    <div class="text-center">
+        <h2>Welcome!</h2>
+        <p>Please sign in or sign up to continue.</p>
+        <div class="mt-4">
+            <a href="signIn" class="btn btn-primary mr-2">Sign In</a>
+            <a href="signUp" class="btn btn-success">Sign Up</a>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
